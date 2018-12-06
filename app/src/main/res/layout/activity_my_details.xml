@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MyDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="76dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="My Details:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        tools:layout_editor_absoluteX="71dp"
+                        tools:layout_editor_absoluteY="29dp"
+                        tools:textColor="@android:color/black" />
+
+                    <ImageButton
+                        android:id="@+id/profile_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="140dp"
+                        android:gravity="right"
+                        android:onClick="profileEditOnClick"
+                        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+
+                </TableRow>
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        app:srcCompat="@drawable/ic_menu_gallery" />
+                <TableRow>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="10dp"
+                        android:text="@string/first_name" />
+
+                    <TextView
+                        android:id="@+id/first_name"
+                        android:padding="3dip"/>
+                </TableRow>
+
+                <TableRow android:padding="10dp">
+
+                    <TextView android:text="@string/last_name" />
+
+                    <TextView
+                        android:id="@+id/last_name"
+                        android:padding="3dip" />
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:padding="10dp"
+                        android:text="@string/email_ID" />
+
+                    <TextView
+                        android:id="@+id/email_id"
+                        android:padding="3dip"/>
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:padding="10dp"
+                        android:text="@string/mobile" />
+
+                    <TextView
+                        android:id="@+id/mobile"
+                        android:padding="3dip"/>
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:padding="10dp"
+                        android:text="@string/address" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:padding="3dip"/>
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:padding="10dp"
+                        android:text="@string/location" />
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:padding="3dip"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
